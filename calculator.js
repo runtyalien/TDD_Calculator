@@ -8,8 +8,14 @@ function add(numbers){
         numbers = numbers.substring(delimiterEnd + 1);
     }
 
-    const numberArray = numbers.split(delimiter);
-    return numberArray.reduce((sum, num) => sum + parseInt(num, 10), 0);
+    const numberArray = numbers.split(delimiter).map(Number);
+    const negatives = numberArray.filter(num => num < 0);
+
+    if (negatives.length > 0) {
+        throw new Error(`negative numbers not allowed: ${negatives.join(",")}`);
+    }
+
+    return numberArray.reduce((sum, num) => sum + num, 0);
 }
 
 module.exports = add;

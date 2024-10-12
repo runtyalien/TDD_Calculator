@@ -14,7 +14,7 @@ This project follows all TDD principles.
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/runtyalien/tdd_calculator.git
+   git clone https://github.com/runtyalien/TDD_Calculator.git
    cd tdd_calculator
 2. Install dependencies:
    ```bash

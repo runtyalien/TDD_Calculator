@@ -15,7 +15,6 @@ This project follows all TDD principles.
 1. Clone the repository:
    ```bash
    git clone https://github.com/runtyalien/TDD_Calculator.git
-   cd tdd_calculator
 2. Install dependencies:
    ```bash
    npm install
@@ -28,6 +27,7 @@ This project follows all TDD principles.
 ## Usage
 1.   ```bash
       npm start
+      ```
 2.   **To run the add function, you can include the following in `calculator.js`:**
   ```javascript
   console.log(add("1,2,3")); // Outputs: 6
